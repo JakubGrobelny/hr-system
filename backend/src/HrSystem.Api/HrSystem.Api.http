@@ -1,0 +1,26 @@
+# Requests for manual testing (VS Code REST Client / JetBrains HTTP Client / Visual Studio).
+@baseUrl = http://localhost:5000
+
+### Health check
+GET {{baseUrl}}/health
+
+### Sign in (the response sets the authentication cookie)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@hr.local",
+  "password": "Admin123!"
+}
+
+### Current user
+GET {{baseUrl}}/api/auth/me
+
+### Current employee profile
+GET {{baseUrl}}/api/employees/me
+
+### User accounts (Admin only)
+GET {{baseUrl}}/api/admin/users
+
+### Sign out
+POST {{baseUrl}}/api/auth/logout

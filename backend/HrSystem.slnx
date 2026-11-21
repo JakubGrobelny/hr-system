@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HrSystem.Api/HrSystem.Api.csproj" />
+    <Project Path="src/HrSystem.Application/HrSystem.Application.csproj" />
+    <Project Path="src/HrSystem.Domain/HrSystem.Domain.csproj" />
+    <Project Path="src/HrSystem.Infrastructure/HrSystem.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HrSystem.Api.Tests/HrSystem.Api.Tests.csproj" />
+  </Folder>
+</Solution>
